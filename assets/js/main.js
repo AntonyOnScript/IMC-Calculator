@@ -8,7 +8,7 @@ form.addEventListener('submit', check)
 
 function check(e){
     e.preventDefault()
-    let resultado = calcularImc(Number(peso1.value), Number(altura1.value)  )
+    let resultado = calcularImc(Number(peso1.value), Number(altura1.value)/100)
     if(resultado>=0 && resultado!==Infinity){
         resultado1.style.backgroundColor="green"
         resultado1.setAttribute("ativado", "ativado")
